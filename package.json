@@ -1,0 +1,32 @@
+{
+  "name": "haki_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm-run-all clean parcel:dev ",
+    "build": "npm-run-all clean parcel:build parcel:run",
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "parcel:run": "parcel index.html",
+    "clean": "rimraf dist .cache .cache-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juliabenedicto/haki_app.git"
+  },
+  "author": "Haki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juliabenedicto/haki_app/issues"
+  },
+  "homepage": "https://github.com/juliabenedicto/haki_app#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {},
+  "keywords": [],
+  "description": ""
+}

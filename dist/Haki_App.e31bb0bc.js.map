@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.js"],"names":["name","console","log"],"mappings":"AAAA,IAAMA,IAAI,GAAG,OAAb;AACAC,OAAO,CAACC,GAAR,iBAAqBF,IAArB","file":"Haki_App.e31bb0bc.js","sourceRoot":"..","sourcesContent":["const name = 'world';\nconsole.log(`Hello ${name}`);"]}

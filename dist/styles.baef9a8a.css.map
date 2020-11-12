@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AACA,KACE,YAAa,CACb,aAAc,CACd,kDACF,CAEA,WACC,YACD","file":"styles.baef9a8a.css","sourceRoot":"..","sourcesContent":["\nbody {\n  height: 100vh;\n  color: #1f1f1f;\n  background: linear-gradient(to bottom, #bada55, #c0ffee);\n}\n\n.container {\n\tdisplay: flex;\n}"]}
