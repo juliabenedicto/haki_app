@@ -4,10 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all clean parcel:dev ",
-    "build": "npm-run-all clean parcel:build parcel:run",
+    "build": "npm-run-all clean parcel:build",
     "parcel:dev": "parcel index.html",
     "parcel:build": "parcel build index.html",
-    "parcel:run": "parcel index.html",
     "clean": "rimraf dist .cache .cache-loader"
   },
   "repository": {

@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.css"],"names":[],"mappings":"AACA,mBACC,UACD,CAFA,uBACC,UACD,CAFA,cACC,UACD","file":"styles.c28e8549.css","sourceRoot":"..","sourcesContent":["\n::placeholder {\n\tcolor: grey;\n}"]}
