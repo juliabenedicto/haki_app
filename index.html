@@ -4,6 +4,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ir=edge">
     <meta name="author" content="Haki App">
     <meta name="description" content="¿Has sufrido una situación de ciberacoso? Haki app te ayuda a denunciarlo de forma fácil y segura">
 
@@ -15,61 +17,72 @@
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- Normalize -->
     <script src="./index.js"></script>
-
 </head>
 
 <body>
+
     <header class="site-header">
-
-        <div class="topnav" id="myTopnav">
-
-            <a href="#" class="active">Descargar</a>
+        <div class="logo">
+            <img src="/img/logo-haki-blanco.png" alt="logo-hakiapp">
+        </div>
+        <nav class="menu-principal">
             <a href="#">¿Cómo funciona?</a>
             <a href="#">Equipo</a>
             <a href="#">FAQs</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
-        </div>
-
+            <a href="#">Descargar</a>
+        </nav>
     </header>
 
-    <main>
-        <div class="portada">
-            <div class="contenido-portada">
-                <div class="imagen-portada">
-                    <img src="img/home-haki.jpg" alt="haki-app">
-                </div>
-                <div class="texto-portada">
-                    <h1>Haki App</h1>
-                    <p>7 de cada 10 menores de edad han sufrido acoso a través de la red.</p>
-                    <p>Haki App nace de la voluntad de sensibilizar sobre la gravedad del ciberacoso, facilitando el acceso a la justicia a la víctima a través de nuestra App.</p>
-                    <a href="#" class="button-recuadro">Descargar</a>
-                </div>
-            </div>
+    <div class="hero">
+        <div class="contenedor-hero">
+            <h1>Haki App</h1>
+            <p>¿Has sufrido una situación de cibracoso?</p>
+            <p>Haki App te ayuda a denunciarlo de forma <b>fácil</b> y <b>segura</b></p>
+            <a href="#" class="boton-color2">Descarga Haki App</a>
         </div>
+    </div>
 
-        <div class="container">
-
+    <main class="como-funciona contenedor">
+        <h2>¿Cómo funciona?</h2>
+        <div class="contenedor-servicios">
+            <div class="servicio">
+                <h3>Descarga Haki App</h3>
+                <div class="iconos">
+                    <i class="far fa-arrow-alt-circle-down"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut id ullam sit tempore nisi laudantium vel explicabo, consequatur optio debitis porro est architecto ut et delectus? Perferendis praesentium reprehenderit suscipit?</p>
+            </div>
+            <div class="servicio">
+                <h3>Captura el ciberacoso</h3>
+                <div class="iconos">
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut id ullam sit tempore nisi laudantium vel explicabo, consequatur optio debitis porro est architecto ut et delectus? Perferendis praesentium reprehenderit suscipit?</p>
+            </div>
+            <div class="servicio">
+                <h3>Genera la denuncia</h3>
+                <div class="iconos">
+                    <i class="far fa-file-alt"></i>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut id ullam sit tempore nisi laudantium vel explicabo, consequatur optio debitis porro est architecto ut et delectus? Perferendis praesentium reprehenderit suscipit?</p>
+            </div>
         </div>
     </main>
 
     <footer class="site-footer">
-        <div class="footer-text">
-            <p class="copyright">Todos los derechos reservados - Haki App 2020</p>
-        </div>
-        <!--.footer-text-->
-        <div class="social-menu">
-            <nav class="redes-sociales">
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="far fa-envelope"></i></i></a>
-            </nav>
-        </div>
-        <!--.social-menu-->
-    </footer>
 
+        <div class="logo-footer">
+            <img src="/img/logo-haki-blanco.png" alt="logo-hakiapp">
+            <p>Todos los derechos reservados - 2020</p>
+        </div>
+
+
+    </footer>
 
 </body>
 <script>
