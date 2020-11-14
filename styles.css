@@ -87,7 +87,7 @@ p {
 
 /* Barra de navegación principal */
 
-header {
+.menu-principal {
     background-color: var(--color-principal);
 }
 
@@ -101,6 +101,56 @@ header {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.menu-principal nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .menu-principal nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.menu-principal a {
+    color: var(--color-texto);
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 0.7rem;
+}
+
+@media (min-width: 768px) {
+    .menu-principal a {
+        margin: 0;
+    }
+}
+
+.menu-principal a:last-of-type {
+    margin-bottom: 0;
+}
+
+.menu-principal a:hover {
+    color: var(--color-fondo);
+}
+
+.activa {
+    color: var(--color-fondo)!important;
+}
+
+.site-footer {
+    background-color: var(--color-principal);
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: var(--color-texto);
 }
 
 .logo-footer {
@@ -122,47 +172,6 @@ header {
     margin-top: 0.1rem;
 }
 
-.site-header nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 2rem 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@media (min-width: 768px) {
-    .site-header nav {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.site-header a {
-    color: var(--color-texto);
-    font-size: 2rem;
-    text-decoration: none;
-}
-
-.site-header a:last-of-type {
-    margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-    .site-header a {
-        margin-bottom: 0;
-    }
-}
-
-.site-footer {
-    background-color: var(--color-principal);
-}
-
-.site-footer a {
-    text-decoration: none;
-    color: var(--color-texto);
-}
-
 
 /* Home */
 
@@ -176,6 +185,8 @@ header {
     /* Centrar elementos verticalmente en el .hero */
 }
 
+
+/*
 .hero::after {
     content: '';
     position: absolute;
@@ -183,11 +194,11 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-}
+} */
 
 .contenedor-hero {
-    position: relative;
-    z-index: 1;
+    /*position: relative;
+    z-index: 1;*/
     text-align: center;
 }
 
@@ -246,3 +257,55 @@ header {
 
 
 /* Medida de los iconos */
+
+
+/* PÁGINA EQUIPO */
+
+.secundaria {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-secundaria {
+    text-align: center;
+}
+
+.lista-equipo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .lista-equipo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.equipo {
+    background-color: var(--color-fondo);
+    padding: 1rem;
+}
+
+
+/* Para poner color distinto al fondo de las imágenes */
+
+.equipo img {
+    max-width: 100%;
+}
+
+
+/* Para hacer las imágenes responsive */
+
+.contenido-equipo p {
+    text-align: center;
+    margin: 1rem 0;
+    line-height: 1.2;
+    ;
+}
+
+.contenido-equipo .nombre-equipo {
+    color: var(--color-principal)
+}
