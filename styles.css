@@ -94,7 +94,24 @@ p {
 .boton-color2:hover {
     background-color: var(--color-fondo);
     color: var(--color-secundario);
-    font-weight: 400;
+}
+
+.boton-rrss {
+    background-color: var(--color-secundario);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-top: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 200;
+    font-size: 4rem;
+    border-radius: .5rem;
+    border: 0.2rem solid var(--color-secundario);
+}
+
+.boton-rrss:hover {
+    background-color: var(--color-fondo);
+    color: var(--color-secundario);
 }
 
 .contenedor {
@@ -195,8 +212,7 @@ p {
 /* Home */
 
 .hero {
-    height: 50rem;
-    /*background-image: url(/img/home-haki.jpg); AÑADIR IMAGEN (clase 112)*/
+    height: 55rem;
     display: flex;
     justify-content: center;
     /* Centrar elementos horizontalmente en el .hero */
@@ -204,25 +220,34 @@ p {
     /* Centrar elementos verticalmente en el .hero */
 }
 
-
-/*
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-} */
-
 .contenedor-hero {
-    /*position: relative;
-    z-index: 1;*/
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .descarga {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 
 /* Para colocar el texto encima de la imágen del hero */
+
+.img-centrada {
+    max-width: 100%;
+    max-height: 25rem;
+    margin: 2rem 0;
+}
+
+@media (min-width: 768px) {
+    .img-centrada {
+        max-width: 100%;
+        max-height: 30rem;
+        margin: 2rem 0;
+    }
+}
 
 .contenedor {
     padding: 3rem;
@@ -281,14 +306,22 @@ p {
 /* PÁGINA EQUIPO */
 
 .secundaria {
-    height: 20rem;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 1.2rem;
+}
+
+@media (min-width: 768px) {
+    .secundaria {
+        height: 30rem;
+    }
 }
 
 .contenedor-secundaria {
     text-align: center;
+    margin: 0 1rem;
 }
 
 .lista-equipo {
@@ -327,3 +360,10 @@ p {
     line-height: 1.2;
     ;
 }
+
+.nombre-equipo {
+    text-align: center;
+}
+
+
+/* PÁGINA FAQS */
