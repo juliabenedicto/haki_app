@@ -373,6 +373,27 @@ p {
 }
 
 
+/* PÁGINA EQUIPO DETALLE */
+
+.equipo-detalle {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (min-width: 768px) {
+    .equipo-detalle {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.equipo-detalle img {
+    max-width: 25rem;
+}
+
+
 /* PÁGINA FAQS */
 
 .faqs h2 {

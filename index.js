@@ -1,9 +1,24 @@
-/* Para quitar y añadir la class "responsive" al topnav cuando el usuario hace click en el botón */
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+/* Para añadir la clase */
+$(window).load(function() {
+    $(".menu-principal nav a").on("click", hover_menu);
+});
+
+function hover_menu() {
+    $(".nav li").removeClass("activas");
+    $(this).addClass("activas");
+}
+
+// Get the container element
+var btnContainer = document.getElementById("myDIV");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
 }
