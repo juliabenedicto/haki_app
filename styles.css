@@ -321,6 +321,12 @@ p {
     margin: 0 1rem;
 }
 
+@media (min-width: 768px) {
+    .contenedor-secundaria {
+        margin-top: 3rem;
+    }
+}
+
 .contenedor-secundaria p {
     margin: 0 2rem;
 }
@@ -368,3 +374,8 @@ p {
 
 
 /* PÁGINA FAQS */
+
+.faqs h2 {
+    text-align: left;
+    margin: 2rem 0 1rem 0;
+}
