@@ -411,6 +411,22 @@ header {
 
 /* PÁGINA EQUIPO DETALLE */
 
+.nav-equipo {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nav-equipo {
+        margin-top: 0;
+    }
+}
+
+.nav-equipo a:hover {
+    color: var(--color-fondo);
+}
+
 .equipo-detalle {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -447,11 +463,20 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 3rem;
-    font-size: 4rem;
+    height: 1.7rem;
+    font-size: 1.7rem;
     color: var(--color-fondo);
+    margin-bottom: 4rem;
+}
+
+@media (min-width: 768px) {
+    #countdown {
+        height: 3rem;
+        font-size: 3rem;
+    }
 }
 
 .cuenta-atras {
     margin-top: 3rem;
+    padding-bottom: 3rem;
 }
