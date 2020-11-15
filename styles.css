@@ -61,6 +61,11 @@ p {
     line-height: 2;
 }
 
+a {
+    color: var(--color-principal);
+    text-decoration: none;
+}
+
 .boton-color1 {
     background-color: var(--color-principal);
     padding: 1rem 5rem;
@@ -159,7 +164,6 @@ p {
 .menu-principal a {
     color: var(--color-texto);
     font-size: 2rem;
-    text-decoration: none;
     margin: 0.7rem;
 }
 
@@ -272,7 +276,7 @@ p {
         justify-content: space-between;
     }
     .servicio {
-        flex: 0 0 calc(33.3% -1rem);
+        flex: 1 1 0;
     }
 }
 
@@ -385,12 +389,18 @@ p {
 
 @media (min-width: 768px) {
     .equipo-detalle {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 .equipo-detalle img {
     max-width: 25rem;
+}
+
+.imagen-equipo {
+    display: grid;
+    align-items: center;
+    justify-items: center;
 }
 
 
