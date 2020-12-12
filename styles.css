@@ -82,6 +82,7 @@ a {
 .boton-color1:hover {
     background-color: var(--color-fondo);
     color: var(--color-principal);
+    transition: 0.5s;
 }
 
 .boton-color2 {
@@ -95,6 +96,7 @@ a {
     font-size: 1.8rem;
     border-radius: .5rem;
     border: 0.2rem solid var(--color-secundario);
+    transition: 0.5s;
 }
 
 .boton-color2:hover {
@@ -136,11 +138,14 @@ header {
     left: 0;
 }
 
+
+/* Si quisiera fijar la barra superior. En tal caso tendría que añadir margin al primer div (aprox 17rem)
 @media (min-width: 768px) {
     header {
         position: fixed;
     }
 }
+*/
 
 
 /* Barra de navegación fija en desktop */
@@ -150,7 +155,7 @@ header {
 }
 
 .logo {
-    padding: 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     background-color: var(--color-secundario);
     min-width: 100%;
 }
@@ -161,6 +166,51 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
+
+.logo:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    transition: 1s;
+}
+
+.logo {
+    overflow: hidden;
+}
+
+.titulo-header {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 1rem 0 0 0;
+    color: var(--color-texto);
+    font-weight: normal;
+}
+
+@media (min-width: 768px) {
+    .titulo-header {
+        font-size: 2rem;
+    }
+}
+
+
+/* Si quiero animar el título de la web
+.titulo-header {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+*/
 
 .menu-principal nav {
     max-width: 1200px;
@@ -230,11 +280,46 @@ header {
     margin-right: auto;
 }
 
+.box {
+    animation: circle 3s infinite;
+    background: var(--color-principal);
+    clip-path: circle(75%);
+}
+
+@keyframes circle {
+    0% {
+        clip-path: circle(75%);
+    }
+    50% {
+        clip-path: circle(25%);
+    }
+    100% {
+        clip-path: circle(75%);
+    }
+}
+
+
+/* Para animar sólo en caso de hover
+
+.box {
+    clip-path: circle(75%);
+    transition: 1s;
+}
+
+
+
+.box:hover {
+    clip-path: circle(25%);
+    background-color: var(--color-principal);
+}
+
+*/
+
 .logo-footer p {
     text-align: center;
     color: var(--color-fondo);
     font-size: 1rem;
-    margin-top: 0.1rem;
+    margin-top: 0.5rem;
 }
 
 
@@ -249,11 +334,14 @@ header {
     /* Centrar elementos verticalmente en el .hero */
 }
 
+
+/* Aplicar si la barra de navegación la quiero fija
 @media (min-width: 768px) {
     .hero {
-        margin-top: 133px;
+        margin-top: 17rem;
     }
 }
+*/
 
 .contenedor-hero {
     text-align: center;
@@ -343,11 +431,14 @@ header {
     padding-bottom: 1.2rem;
 }
 
+
+/* Aplicar si la barra de navegación la quiero fija
 @media (min-width: 768px) {
     .secundaria {
-        margin-top: 133px;
+        margin-top: 17rem;
     }
 }
+*/
 
 
 /* Para menú fijo en Desktop, indicar el margin igual al ancho del header fijo */
@@ -392,6 +483,25 @@ header {
 
 .equipo img {
     max-width: 100%;
+}
+
+.equipo picture {
+    max-width: 100%;
+}
+
+.equipo img:hover {
+    filter: opacity(.5);
+    transition: 1s;
+}
+
+.equipo:hover img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.equipo {
+    overflow: hidden;
 }
 
 
@@ -449,6 +559,18 @@ header {
     display: grid;
     align-items: center;
     justify-items: center;
+}
+
+.imagenes-detalle {
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.imagen-detalle {
+    max-height: 100%;
 }
 
 
