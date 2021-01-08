@@ -16,23 +16,8 @@ function updateClock() {
 }
 */
 
-/* CRITICAL */
 
-const critical = require('critical');
-
-critical.generate({
-    inline: true,
-    base: 'test/',
-    src: 'index.html',
-    target: {
-        html: 'index-critical.html',
-        css: 'critical.css',
-    },
-    width: 1300,
-    height: 900,
-});
-
-var end = new Date(Date.UTC(2020, 12, 31, 24, 0));
+var end = new Date(Date.UTC(2021, 02, 28, 24, 0));
 
 var _second = 1000;
 var _minute = _second * 60;
