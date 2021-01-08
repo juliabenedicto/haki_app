@@ -168,7 +168,6 @@ header {
 }
 
 .logo:hover img {
-    -webkit-transform: scale(1.3);
     transform: scale(1.3);
     transition: 1s;
 }
@@ -280,19 +279,39 @@ header {
 }
 
 .box {
+    -webkit-animation: circle 3s infinite;
     animation: circle 3s infinite;
     background: var(--color-principal);
+    -webkit-clip-path: circle(75%);
     clip-path: circle(75%);
+}
+
+@-webkit-keyframes circle {
+    0% {
+        -webkit-clip-path: circle(75%);
+        clip-path: circle(75%);
+    }
+    50% {
+        -webkit-clip-path: circle(25%);
+        clip-path: circle(25%);
+    }
+    100% {
+        -webkit-clip-path: circle(75%);
+        clip-path: circle(75%);
+    }
 }
 
 @keyframes circle {
     0% {
+        -webkit-clip-path: circle(75%);
         clip-path: circle(75%);
     }
     50% {
+        -webkit-clip-path: circle(25%);
         clip-path: circle(25%);
     }
     100% {
+        -webkit-clip-path: circle(75%);
         clip-path: circle(75%);
     }
 }
@@ -379,8 +398,6 @@ header {
 .contenedor {
     padding: 3rem;
     border-radius: 1rem;
-    -webkit-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 10px 17px 0px rgba(0, 0, 0, 0.75);
     margin-bottom: 10rem;
 }
@@ -494,12 +511,12 @@ header {
 }
 
 .equipo img:hover {
+    -webkit-filter: opacity(.5);
     filter: opacity(.5);
     transition: 1s;
 }
 
 .equipo:hover img {
-    -webkit-transform: scale(1.1);
     transform: scale(1.1);
     transition: 1s;
 }
@@ -643,28 +660,51 @@ header {
 
 .animada-1 {
     opacity: 0;
+    -webkit-animation-name: aparecer;
     animation-name: aparecer;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
 .animada-2 {
     opacity: 0;
+    -webkit-animation-name: aparecer;
     animation-name: aparecer;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
+    -webkit-animation-delay: 2s;
     animation-delay: 2s;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
 }
 
 .animada-3 {
     opacity: 0;
+    -webkit-animation-name: aparecer;
     animation-name: aparecer;
+    -webkit-animation-duration: 4s;
     animation-duration: 4s;
+    -webkit-animation-delay: 4s;
     animation-delay: 4s;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes aparecer {
@@ -692,10 +732,23 @@ header {
 /* EFECTOS */
 
 .rotar {
+    -webkit-animation-duration: 6s;
     animation-duration: 6s;
+    -webkit-animation-direction: alternate;
     animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
+    -webkit-animation-name: rotar;
     animation-name: rotar;
+}
+
+@-webkit-keyframes rotar {
+    from {
+        transform: rotate(0deg) scale(1);
+    }
+    to {
+        transform: rotate(360deg) scale(1.5);
+    }
 }
 
 @keyframes rotar {
