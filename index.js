@@ -1,22 +1,5 @@
 /* Cuenta atrás para página de "Próximamente" */
 
-/*
-window.onload = updateClock;
-
-var totalTime = 10;
-
-function updateClock() {
-    document.getElementById('countdown').innerHTML = totalTime;
-    if (totalTime == 0) {
-        console.log('Final');
-    } else {
-        totalTime -= 1;
-        setTimeout("updateClock()", 1000);
-    }
-}
-*/
-
-
 var end = new Date(Date.UTC(2021, 02, 28, 24, 0));
 
 var _second = 1000;
